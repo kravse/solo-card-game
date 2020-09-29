@@ -1,0 +1,54 @@
+h1 {
+  display: block;
+  text-align: center;
+}
+#hand, #path, #hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hand {
+  width: 100%;
+  margin: 0 auto;
+}
+.card.template{
+  display: none;
+}
+
+#path p {
+  border: 1px solid;
+  padding: 15px 45px;
+  margin: 10px 5px;
+}
+
+.card {
+  display: block;
+  margin: 20px
+}
+
+.card .content {
+  padding: 5px 20px;
+  border: 1px solid;
+  padding: 10px 25px;
+  text-align: center;
+  margin: 0 5px;
+}
+
+.card .controls {
+  display: flex;
+  align-items: space-between;
+}
+
+.card .content:hover {
+  background: #eee;
+}
+
+.card .top {
+  font-size: 25px;
+}
+
+.card .bottom {
+  margin-top: 50px;
+  font-size: 10px;
+}

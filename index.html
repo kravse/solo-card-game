@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="./main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="sologame.js"></script>
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+  <h1>Nowhere Near</h1>
+  <div id="hero">
+    <button onclick="GamePlay().draw()">Draw</button>
+  </div>
+
+  <div id="path"><p>*</p></div>
+  <div class="card template">
+    <div class="content">
+      <p class="top"></p>
+      <p class="bottom"></p>
+    </div>
+    <div class="controls">
+      <p>Up: </p>
+      <input name="box" class="box" type="checkbox" />
+    </div>
+    <div class="controls">
+      <p>Flip: </p>
+      <input name="flip" class="flip" type="checkbox" />
+    </div>
+  </div>
+  <div id="tableau"></div>
+  <div id="hand"></div>
+  <script>GamePlay().init();</script>
+</body>
+
+</html>
